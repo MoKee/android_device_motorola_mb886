@@ -1,7 +1,7 @@
-# Inherit some common CM stuff.
-$(call inherit-product, vendor/cm/config/common_full_phone.mk)
+# Inherit some common MK stuff.
+$(call inherit-product, vendor/mk/config/common_full_phone.mk)
 
-DEVICE_PACKAGE_OVERLAYS += device/motorola/qcom-common/overlay-cm
+DEVICE_PACKAGE_OVERLAYS += device/motorola/qcom-common/overlay-mk
 
 # Media
 PRODUCT_COPY_FILES += \
@@ -12,7 +12,7 @@ PRODUCT_COPY_FILES += \
 TARGET_SCREEN_WIDTH := 720
 TARGET_SCREEN_HEIGHT := 1280
 
-PRODUCT_NAME := cm_mb886
+PRODUCT_NAME := mk_mb886
 TARGET_VENDOR_PRODUCT_NAME := MB886_att
 TARGET_VENDOR_DEVICE_NAME := qinara
 
